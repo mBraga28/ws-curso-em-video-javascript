@@ -1,0 +1,20 @@
+No terminal no tempo do 34:12 da aula 6 de Java Script
+
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2)
+-------> tranforma o n1 em um valor com duas casas decimais
+'1545.50'
+>  n1.toFixed(2).replace('.', '.,')
+-------> troca os ponto com a vírgula
+'1545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+-------> Uma maneira de mostrar o valor em dinheiro 
+--->  currency mostra um valor monetário
+'R$ 1,545.50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+'$ 1,545.50'
+>  n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) 
+'€ 1,545.50'

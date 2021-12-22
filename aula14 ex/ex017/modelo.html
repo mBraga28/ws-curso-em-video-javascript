@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="estilo.css ">
+    <!--    |
+            |-> cria um link com um arquivo .css 
+
+     -->
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <section>
+        <div id="dados">
+           <p>
+               Início: <input type="number" name="inicio" id="txti" checked>
+           </p>
+           <p>
+               Fim: <input type="number" name="fim" id="txtf"checked>
+           </p>
+           <!-- o name é mais utilizado, ou seja, mais funcional no PHP  -->
+           <p>
+               Passo: <input type="number" name="passo" id="txtp" checked>
+           </p>
+           <p>
+               <input type="button" value="Contar" onclick="contar()">
+           </p>
+        </div>
+        <div id="res">
+            Preparando uma contagem
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    <script src="scriptex1.js"></script>
+    <!--    |
+            |-> cria um link com um arquivo .js 
+
+     -->
+</body>
+</html>

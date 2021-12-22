@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Primeiros passos com o DOM </title>
+    <style>
+        Body {
+            background-color: cadetblue;
+            color: darkred;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1> Iniciando estudos com DOM </h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript. </p>
+    <div id ="msg" name ="msg2" class="msg3">Clique em mim</div>
+    <script>
+       // window.document.write('Olá Mundo, eu sou Marco ');
+       // window.document.write(window.document.charset);
+       // window.document.write(window.navigator.appName);
+       // window.document.write(window.document.URL);
+
+       /// getElementsByTagName usado para Marcas 
+       /*    tem vários outros como...
+            - getElementsById
+            - getElementsByName
+            - getElementsByClassName            
+
+       */
+       var p1 = window.document.getElementsByTagName('p')[1]
+       var corpo = window.document.body
+       //window.document.write('Está escrito assim: ' + p1.innerText)
+       //corpo.style.backgroundColor = 'pink'
+       //p1.style.color = 'darkgreen'
+
+       /*
+       /// getElementsById usado para Id
+       var d = window.document.getElementsById('msg')
+       d.style.background = 'skyblue'
+       d.innerText = 'Estou aguardando...'
+       //window.document.getElementById('msg').innerText = 'Olá' */
+
+       /// getElementsByName usado para Nomes
+       var d2 = window.document.getElementsByName('msg2')[0]
+       d2.innerText = 'Olá!'
+
+       /// getElementsByClassName usado para Nome das classes
+       var d3= window.document.getElementsByClassName('msg3')[0]
+       d3.innerText = 'Oláaa!'
+       
+       /// querySelector() e querySelectorAll() 
+       var d4 = window.document.querySelector('div#msg')
+
+             /* OBS: no querySelector 
+             # usado na div 
+             . usado nas classes
+            */
+       d4.style.color = 'blue'    
+       
+
+    </script>
+</body>
+</html>

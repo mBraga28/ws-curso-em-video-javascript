@@ -1,0 +1,32 @@
+Valores Ternários 
+? e :
+
+--------PARTE 1----------
+> var média = 5.5
+undefined
+> média > 7?'APROVADO':'REPROVADO'
+'REPROVADO'
+> média += 3
+8.5
+> média
+8.5
+média > 7?'APROVADO':'REPROVADO'
+'APROVADO'
+
+--------PARTE 2----------
+> var x = 8
+undefined
+> var res = x % 2 == 0 ? 5 : 9
+undefined
+> x
+8
+> res
+5
+> var idade = 19
+undefined
+> var r = idade >= 18 ? 'MAIOR' : 'MENOR'
+undefined
+> idade
+19
+> r 
+'MAIOR'
